@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit Jadhav - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          <div class="name_title">Rohit Jadhav</div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email"/>
+            rohitjadhav2507@gmail.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone"/>
+            +1 (555) 019-2834
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="home_btn" href="#home" title="Home">
+            <img src="html_finalprojimages/home.png" alt="Home" class="nav_home_icon"/>
+          </a>
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Project Details</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://images.unsplash.com/photo-1534972195531-a756b1126f24?auto=format&fit=crop&w=600&q=80" alt="Rohit Jadhav Profile" class="profile_image"/>
+      </div>
+
+      <div class="about_text_container">
+        <h1>
+          Hi, I'm Rohit Jadhav! <img src="html_finalprojimages/home.png" alt="Wave" class="wave_icon" style="display:none;"/>
+        </h1>
+        <p>
+          I am a passionate Full Stack Software Developer and Computer Science enthusiast with strong foundations in front-end and back-end web development. I love building responsive, user-friendly, and accessible applications that solve real-world problems.
+        </p>
+        <p>
+          Currently expanding my expertise through the IBM Full Stack Software Developer program, focusing on modern web architectures, cloud-native deployments, and interactive user experiences.
+        </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" alt="HTML5"/>
+          <h6>HTML5</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png" alt="CSS3"/>
+          <h6>CSS3</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" alt="JavaScript"/>
+          <h6>JavaScript</h6>
+          <p>1.5 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" alt="React"/>
+          <h6>React</h6>
+          <p>1 year experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png" alt="Node.js"/>
+          <h6>Node.js</h6>
+          <p>1 year experience</p>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects / Project Details -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear:both;"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Customer Support Chatbot</h3>
+          <ul>
+            <li>Developed a secure, responsive website integrated with an AI chatbot for an automobile client using HTML5, CSS3, JavaScript, and IBM Watson Assistant.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Sentiment Analyzer Dashboard</h3>
+          <ul>
+            <li>Built and deployed an end-to-end sentiment analyzer for customer product reviews on an eCommerce platform using IBM Watson NLU and JavaScript.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Fashion & Lifestyle eCommerce Platform</h3>
+          <ul>
+            <li>Engineered a modern, responsive multi-page eCommerce application with shopping cart management, product filtering, and Stripe payment gateway integration.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Rohit is a very quick learner and quickly grasps key concepts of Web development. He has a great attitude and is an excellent team player. Has a curious mind and asks the right questions. Takes initiative within a team and has high potential to lead engineering projects.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Rohit has been an awesome experience. He is highly knowledgeable and always goes the extra mile to ensure top code quality and performance. For any web development projects that require dedication, I would definitely recommend him!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I worked alongside Rohit during the initial phase of our web venture. He is a committed engineer with solid command over HTML, CSS, and modern JavaScript. He is a tremendous asset to any development team!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)" id="new_recommendation_name"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- Scroll to Top / Working Home Icon -->
+    <div class="iconbutton">
+      <a href="#home" title="Scroll to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" width="32px" height="32px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Popup Confirmation -->
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt="Success"/>
+      <h3>Thank you for submitting a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Rohit Jadhav. Built with HTML, CSS & JavaScript.</p>
+    </footer>
+  </body>
+</html>
